@@ -1,0 +1,26 @@
+﻿@model List<BankTransaction.Models.Transaction>
+<div class="container">
+	<table>
+    <thead>
+			<tr>
+				<th>Account Number</th>
+				<th>Client Name</th>
+				<th>Bank Name</th>
+				<th>Swift Code</th>
+				<th>Amount</th>
+			</tr>
+	</thead>
+	<tbody>
+			@foreach(var item in Model)
+			{
+				<tr>
+					<td>@item.AccountNumber</td>
+					<td>@item.ClientName</td>
+					<td>@item.BankName</td>
+					<td>@item.SwiftCode</td>
+					<td>@item.Amount</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>

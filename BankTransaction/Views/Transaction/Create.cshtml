@@ -1,0 +1,28 @@
+﻿@model BankTransaction.Models.Transaction;
+<div class="container">
+	<h3>Add</h3>
+	<form asp-action="Create" method="post">
+		<div>
+			<label asp-for="AccountNumber"></label>
+			<input asp-for="AccountNumber" class="form-control" />
+		</div>
+		<div>
+			<label asp-for="ClientName"></label>
+			<input asp-for="ClientName" class="form-control" />
+		</div>
+		<div>
+			<label asp-for="BankName"></label>
+			<input asp-for="BankName" class="form-control" />
+		</div>
+		
+		<div>
+			<label asp-for="SwiftCode"></label>
+			<input asp-for="SwiftCode" class="form-control" />
+		</div>
+		<div>
+			<label asp-for="Amount"></label>
+			<input asp-for="Amount" class="form-control" />
+		</div>
+		<button type="submit">Add Transaction</button>
+	</form>
+</div>

@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "H:\\Core\\BankTransaction\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9F8BAAD5-7D91-40DB-AB52-A4497297F7D2}|BankTransaction\\BankTransaction.csproj|h:\\core\\banktransaction\\banktransaction\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F8BAAD5-7D91-40DB-AB52-A4497297F7D2}|BankTransaction\\BankTransaction.csproj|solutionrelative:banktransaction\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F8BAAD5-7D91-40DB-AB52-A4497297F7D2}|BankTransaction\\BankTransaction.csproj|h:\\core\\banktransaction\\banktransaction\\models\\transactiondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F8BAAD5-7D91-40DB-AB52-A4497297F7D2}|BankTransaction\\BankTransaction.csproj|solutionrelative:banktransaction\\models\\transactiondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F8BAAD5-7D91-40DB-AB52-A4497297F7D2}|BankTransaction\\BankTransaction.csproj|h:\\core\\banktransaction\\banktransaction\\views\\transaction\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F8BAAD5-7D91-40DB-AB52-A4497297F7D2}|BankTransaction\\BankTransaction.csproj|solutionrelative:banktransaction\\views\\transaction\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F8BAAD5-7D91-40DB-AB52-A4497297F7D2}|BankTransaction\\BankTransaction.csproj|h:\\core\\banktransaction\\banktransaction\\views\\transaction\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F8BAAD5-7D91-40DB-AB52-A4497297F7D2}|BankTransaction\\BankTransaction.csproj|solutionrelative:banktransaction\\views\\transaction\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F8BAAD5-7D91-40DB-AB52-A4497297F7D2}|BankTransaction\\BankTransaction.csproj|h:\\core\\banktransaction\\banktransaction\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F8BAAD5-7D91-40DB-AB52-A4497297F7D2}|BankTransaction\\BankTransaction.csproj|solutionrelative:banktransaction\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F8BAAD5-7D91-40DB-AB52-A4497297F7D2}|BankTransaction\\BankTransaction.csproj|h:\\core\\banktransaction\\banktransaction\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F8BAAD5-7D91-40DB-AB52-A4497297F7D2}|BankTransaction\\BankTransaction.csproj|solutionrelative:banktransaction\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F8BAAD5-7D91-40DB-AB52-A4497297F7D2}|BankTransaction\\BankTransaction.csproj|h:\\core\\banktransaction\\banktransaction\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9F8BAAD5-7D91-40DB-AB52-A4497297F7D2}|BankTransaction\\BankTransaction.csproj|solutionrelative:banktransaction\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "H:\\Core\\BankTransaction\\BankTransaction\\Views\\Transaction\\Create.cshtml",
+              "RelativeDocumentMoniker": "BankTransaction\\Views\\Transaction\\Create.cshtml",
+              "ToolTip": "H:\\Core\\BankTransaction\\BankTransaction\\Views\\Transaction\\Create.cshtml",
+              "RelativeToolTip": "BankTransaction\\Views\\Transaction\\Create.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAswBcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-10T21:56:34.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "H:\\Core\\BankTransaction\\BankTransaction\\Views\\Transaction\\Index.cshtml",
+              "RelativeDocumentMoniker": "BankTransaction\\Views\\Transaction\\Index.cshtml",
+              "ToolTip": "H:\\Core\\BankTransaction\\BankTransaction\\Views\\Transaction\\Index.cshtml",
+              "RelativeToolTip": "BankTransaction\\Views\\Transaction\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-09T22:07:11.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TransactionController.cs",
+              "DocumentMoniker": "H:\\Core\\BankTransaction\\BankTransaction\\Controllers\\TransactionController.cs",
+              "RelativeDocumentMoniker": "BankTransaction\\Controllers\\TransactionController.cs",
+              "ToolTip": "H:\\Core\\BankTransaction\\BankTransaction\\Controllers\\TransactionController.cs",
+              "RelativeToolTip": "BankTransaction\\Controllers\\TransactionController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAcwB0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T21:22:45.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "H:\\Core\\BankTransaction\\BankTransaction\\appsettings.json",
+              "RelativeDocumentMoniker": "BankTransaction\\appsettings.json",
+              "ToolTip": "H:\\Core\\BankTransaction\\BankTransaction\\appsettings.json",
+              "RelativeToolTip": "BankTransaction\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-09T16:16:12.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "H:\\Core\\BankTransaction\\BankTransaction\\Program.cs",
+              "RelativeDocumentMoniker": "BankTransaction\\Program.cs",
+              "ToolTip": "H:\\Core\\BankTransaction\\BankTransaction\\Program.cs",
+              "RelativeToolTip": "BankTransaction\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwB0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T01:15:09.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransactionDbContext.cs",
+              "DocumentMoniker": "H:\\Core\\BankTransaction\\BankTransaction\\Models\\TransactionDbContext.cs",
+              "RelativeDocumentMoniker": "BankTransaction\\Models\\TransactionDbContext.cs",
+              "ToolTip": "H:\\Core\\BankTransaction\\BankTransaction\\Models\\TransactionDbContext.cs",
+              "RelativeToolTip": "BankTransaction\\Models\\TransactionDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T01:01:45.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "H:\\Core\\BankTransaction\\BankTransaction\\Models\\Transaction.cs",
+              "RelativeDocumentMoniker": "BankTransaction\\Models\\Transaction.cs",
+              "ToolTip": "H:\\Core\\BankTransaction\\BankTransaction\\Models\\Transaction.cs",
+              "RelativeToolTip": "BankTransaction\\Models\\Transaction.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwBEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T00:56:11.364Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
