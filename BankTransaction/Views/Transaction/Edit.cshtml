@@ -1,7 +1,7 @@
 ﻿@model BankTransaction.Models.Transaction;
 <div class="container">
 	<h3>Add</h3>
-	<form asp-action="Create" method="post">
+	<form asp-action="Edit" method="post">
 		<div>
 			<label asp-for="AccountNumber"></label>
 			<input asp-for="AccountNumber" class="form-control" />
@@ -14,7 +14,7 @@
 			<label asp-for="BankName"></label>
 			<input asp-for="BankName" class="form-control" />
 		</div>
-		
+
 		<div>
 			<label asp-for="Amount"></label>
 			<input asp-for="Amount" class="form-control" />

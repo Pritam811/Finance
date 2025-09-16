@@ -285,3 +285,4 @@ H:\Core\BankTransaction\BankTransaction\bin\Debug\net8.0\runtimes\win\lib\net7.0
 H:\Core\BankTransaction\BankTransaction\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 H:\Core\BankTransaction\BankTransaction\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 H:\Core\BankTransaction\BankTransaction\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+H:\Core\BankTransaction\BankTransaction\obj\Debug\net8.0\BankTransaction.sourcelink.json
