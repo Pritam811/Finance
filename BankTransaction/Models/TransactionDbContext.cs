@@ -9,5 +9,6 @@ namespace BankTransaction.Models
             
         }
         public DbSet<Transaction> Transactions { get; set; }
+        public DbSet<Register> Registers { get; set; }
     }
 }

@@ -10,6 +10,7 @@ namespace BankTransaction.Models
         public string ClientName { get; set; }
         public string BankName { get; set; }
         public int Amount {  get; set; }
+        public int Loan { get; set; }
       
 
     }

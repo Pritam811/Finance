@@ -34,9 +34,12 @@ namespace BankTransaction
 
             app.UseAuthorization();
 
+            /*app.MapControllerRoute(
+                name: "default",
+                pattern: "{controller=Home}/{action=Index}/{id?}");*/
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Transaction}/{action=LogIn}/{id?}");
 
             app.Run();
         }
