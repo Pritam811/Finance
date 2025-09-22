@@ -17,6 +17,15 @@ namespace BankTransaction
             builder.Services.AddDbContext<TransactionDbContext>(options=>
             options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionString")));
 
+            //Add session
+            builder.Services.AddDistributedMemoryCache();
+            builder.Services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(30); // how long session lasts
+                options.Cookie.HttpOnly = true; // more secure
+                options.Cookie.IsEssential = true; // required for GDPR compliance
+            });
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -32,6 +41,7 @@ namespace BankTransaction
 
             app.UseRouting();
 
+            app.UseSession();
             app.UseAuthorization();
 
             /*app.MapControllerRoute(

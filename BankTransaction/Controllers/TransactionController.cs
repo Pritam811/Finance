@@ -13,9 +13,30 @@ namespace BankTransaction.Controllers
         {
             _context = context;
         }
+        [HttpGet]
         public IActionResult LogIn()
         {
             return View();
+        }
+        [HttpPost]
+        public IActionResult LogIn(LogIn model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            var findUser = _context.Registers.SingleOrDefault(e => e.Email == model.Email);
+            if (findUser == null) {
+                ModelState.AddModelError("", "Not Registered");
+                return View(model);
+            }
+            if (findUser.Password != model.Password) {
+                ModelState.AddModelError("", "Invalid Password");
+                return View(model);
+            }
+            HttpContext.Session.SetInt32("Id",findUser.Id);
+            HttpContext.Session.SetString("Name", findUser.Name);
+            return RedirectToAction("DashBoard");
         }
         [HttpGet]
         public IActionResult Register()
@@ -35,13 +56,15 @@ namespace BankTransaction.Controllers
                 };
                 _context.Registers.Add(user);
                 _context.SaveChanges();
+                TempData["SuccessMessage"] = "Your account has been created! Please log in.";
                 return RedirectToAction("LogIn","Transaction");
             }
             return View(model);
         }
         public IActionResult Dashboard()
         {
-            var myRecord = _context.Transactions.FirstOrDefault(m => m.AccountNumber == "4925");
+            //to show the current user amount
+            /*var myRecord = _context.Transactions.FirstOrDefault(m => m.AccountNumber == "4925");
             if(myRecord == null)
             {
                 ViewBag.CurrentAmount = 0;
@@ -51,8 +74,14 @@ namespace BankTransaction.Controllers
             {
                 ViewBag.CurrentAmount = myRecord.Amount;
                 ViewBag.Loan = myRecord.Loan;
+            }*/
+            var userName = HttpContext.Session.GetString("Name");
+            if (string.IsNullOrEmpty("userName"))
+            {
+                return RedirectToAction("LogIn");
             }
-                return View();
+            ViewBag.UserName = userName;
+            return View();
         }
         public IActionResult Index()
         {
