@@ -1,4 +1,7 @@
 ﻿@model BankTransaction.Models.LogIn
+@{
+    Layout = "_NoNavLayout";
+}
 <div class="text-center">
     <h3>Welcome To Mon€y Track€r</h3>
     <p>Don't Have an <a asp-action="Register" asp-controller="Transaction">Account?</a></p>
@@ -36,7 +39,7 @@
 
             <div class="mb-3">
                 <label asp-for="Password" class="form-label"></label>
-                <input asp-for="Password" class="form-control" />
+                <input asp-for="Password" type="password" class="form-control" />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
 

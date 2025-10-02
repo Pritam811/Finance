@@ -1,0 +1,15 @@
+﻿@model BankTransaction.Models.Register
+
+<h2>My Data</h2>
+@foreach(var err in ViewData.ModelState.Values.SelectMany(e=> e.Errors))
+{
+	<div class="alert alert-danger">@err.ErrorMessage</div>
+}
+@if (Model != null)
+{
+    {
+        <p><strong>Name:</strong> @Model.Name</p>
+        <p><strong>Email:</strong> @Model.Email</p>
+  
+    }
+}

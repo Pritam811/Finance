@@ -13,11 +13,15 @@ namespace BankTransaction.Controllers
         {
             _context = context;
         }
+
+        //User LogIn form
         [HttpGet]
         public IActionResult LogIn()
         {
             return View();
         }
+
+        //User Login
         [HttpPost]
         public IActionResult LogIn(LogIn model)
         {
@@ -38,11 +42,23 @@ namespace BankTransaction.Controllers
             HttpContext.Session.SetString("Name", findUser.Name);
             return RedirectToAction("DashBoard");
         }
+
+        //User LogOut
+        public  IActionResult LogOut()
+        {
+            HttpContext.Session.Clear();
+
+            return RedirectToAction("LogIn");
+        }
+
+        //User account creation form
         [HttpGet]
         public IActionResult Register()
         {
             return View("Register");
         }
+
+        //User account creation form submit
         [HttpPost]
         public IActionResult Register(Register model)
         {
@@ -61,6 +77,8 @@ namespace BankTransaction.Controllers
             }
             return View(model);
         }
+
+        //After Successfully login ,home page
         public IActionResult Dashboard()
         {
             //to show the current user amount
@@ -82,6 +100,25 @@ namespace BankTransaction.Controllers
             }
             ViewBag.UserName = userName;
             return View();
+        }
+       
+        //Display User Data
+        public IActionResult MyData()
+        {
+            var myId = HttpContext.Session.GetInt32("Id");
+            if (myId == null)
+            {
+                ModelState.AddModelError("","Something went wrong!"); 
+                return View();
+            }
+            var user = _context.Registers.FirstOrDefault(x => x.Id == myId);
+            if (user == null)
+            {
+                ModelState.AddModelError("", "User not found.");
+                return View(); // stays on the same page
+            }
+
+            return View(user);
         }
         public IActionResult Index()
         {

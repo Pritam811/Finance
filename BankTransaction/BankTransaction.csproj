@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <Folder Include="Views\NewFolder\" />
+    <Folder Include="Views\User\" />
   </ItemGroup>
 
 </Project>
