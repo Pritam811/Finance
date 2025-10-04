@@ -1,5 +1,7 @@
 ﻿using BankTransaction.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.DotNet.Scaffolding.Shared.Messaging;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
@@ -176,6 +178,35 @@ namespace BankTransaction.Controllers
 
             _context.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        /*public IActionResult Search(string AccountNumber, string BankName )
+        {
+            var query = _context.Transactions.AsQueryable();
+            if (!string.IsNullOrWhiteSpace(AccountNumber)) {
+                query = query.Where(t => t.AccountNumber == AccountNumber);
+            }
+            if (!string.IsNullOrWhiteSpace(BankName))
+            {
+                query = query.Where(t => t.BankName.Contains(BankName));
+            }
+            var results = query.ToList();
+            if (!results.Any())
+            {
+                ViewBag.Message = "Nothing Found!";
+            }
+
+            return View(results);
+        }*/
+
+        public IActionResult Search(string query) {
+            var results = _context.Transactions.Where(t => t.AccountNumber == query || t.BankName.Contains(query)).ToList();
+            if (!results.Any())
+            {
+                ViewBag.Message = "Nothing Found";
+            }
+            return View(results);
+            
         }
         
         [HttpPost]

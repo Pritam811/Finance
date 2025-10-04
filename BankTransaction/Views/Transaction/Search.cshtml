@@ -1,0 +1,33 @@
+﻿@model List<BankTransaction.Models.Transaction>
+@if (ViewBag.Message !=null)
+{
+	<div class="alert alert-warning">@ViewBag.Message</div>
+}
+@if (Model!=null && Model.Any())
+{
+	 <table class="table table-bordered">
+        
+         <thead>
+            <tr>
+                <th>Account Number</th>
+                <th>Bank Name</th>
+                <th>Amount</th>
+                <th>Loan</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <td>@item.AccountNumber</td>
+                    <td>@item.BankName</td>
+                    <td>@item.Amount</td>
+                    <td>@item.Loan</td>
+                </tr>
+            }
+            
+        </tbody>
+
+	 </table>
+}

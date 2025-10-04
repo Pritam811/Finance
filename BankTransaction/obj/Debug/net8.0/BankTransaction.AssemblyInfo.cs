@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BankTransaction")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c814830b8d6004385d0435315aa2e7232e66f11b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba947c640bb2e06509a48bf4fae5bba6e0cb5ca0")]
 [assembly: System.Reflection.AssemblyProductAttribute("BankTransaction")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BankTransaction")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
